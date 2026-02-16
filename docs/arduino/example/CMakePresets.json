@@ -1,0 +1,74 @@
+{
+    "version": 3,
+    "configurePresets": [
+        {
+            "name": "avr-gcc-base",
+            "displayName": "avr AVR-GCC (Debug)",
+            "description": "Compiling with avr-gcc",
+            "binaryDir": "${sourceDir}/out/build/${presetName}",
+            "installDir": "${sourceDir}/out/install/${presetName}",
+            "generator": "Ninja",
+            "hidden": true,
+            "toolchainFile": "cmake/avr-toolchain.cmake"
+        },
+        {
+            "name": "avr-clang-base",
+            "displayName": "avr AVR-Clang (Debug)",
+            "description": "Compiling with avr-clang",
+            "binaryDir": "${sourceDir}/out/build/${presetName}",
+            "installDir": "${sourceDir}/out/install/${presetName}",
+            "generator": "Ninja",
+            "hidden": true,
+            "toolchainFile": "cmake/avr-toolchain-clang.cmake"
+        },
+        {
+            "name": "avr-gcc-debug",
+            "inherits": ["avr-gcc-base"],
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        },
+        {
+            "name": "avr-clang-debug",
+            "inherits": ["avr-clang-base"],
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        },
+        {
+            "name": "avr-gcc-relwithdebinfo",
+            "inherits": ["avr-gcc-base"],
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "RelWithDebInfo"
+            }
+        },
+        {
+            "name": "avr-gcc-release",
+            "inherits": ["avr-gcc-base"],
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release",
+                "CMAKE_CXX_FLAGS_INIT": "-Oz"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "avr-gcc-debug",
+            "description": "Compiling with avr-gcc",
+            "displayName": "AVR-GCC",
+            "configurePreset": "avr-gcc-debug"
+        },
+        {
+            "name": "avr-gcc-release",
+            "description": "Compiling with avr-gcc",
+            "displayName": "AVR-GCC",
+            "configurePreset": "avr-gcc-release"
+        },
+        {
+            "name": "avr-gcc-relwithdebinfo",
+            "description": "Compiling with avr-gcc",
+            "displayName": "AVR-GCC",
+            "configurePreset": "avr-gcc-relwithdebinfo"
+        }
+    ]
+}

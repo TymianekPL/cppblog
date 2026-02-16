@@ -1,0 +1,6 @@
+out/
+.vs
+.cache
+__cmake_systeminformation
+CMakeCache.txt
+CMakeFiles

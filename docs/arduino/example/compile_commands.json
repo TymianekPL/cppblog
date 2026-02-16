@@ -1,0 +1,26 @@
+[
+  {
+    "directory": "F:/source/cppblog/docs/arduino/example/out/build/avr-gcc-release",
+    "command": "C:\\SDK\\AVRGCC\\avr8-gnu-toolchain-win32_x86_64\\bin\\avr-g++.exe -DF_CPU=16000000L -DSERIAL_BAUD=9600 -O3 -DNDEBUG -std=gnu++23 -mmcu=atmega328p -Oz -flto -fno-exceptions -fno-rtti -fno-threadsafe-statics -ffunction-sections -fdata-sections -fmodule-mapper=CMakeFiles\\HiArduino.dir\\src\\main.cpp.obj.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles\\HiArduino.dir\\src\\main.cpp.obj -c F:\\source\\cppblog\\docs\\arduino\\example\\src\\main.cpp",
+    "file": "F:/source/cppblog/docs/arduino/example/src/main.cpp",
+    "output": "F:/source/cppblog/docs/arduino/example/out/build/avr-gcc-release/CMakeFiles/HiArduino.dir/src/main.cpp.obj"
+  },
+  {
+    "directory": "F:/source/cppblog/docs/arduino/example/out/build/avr-gcc-release",
+    "command": "C:\\SDK\\AVRGCC\\avr8-gnu-toolchain-win32_x86_64\\bin\\avr-g++.exe -DF_CPU=16000000L -DSERIAL_BAUD=9600 -O3 -DNDEBUG -std=gnu++23 -mmcu=atmega328p -Oz -flto -fno-exceptions -fno-rtti -fno-threadsafe-statics -ffunction-sections -fdata-sections -fmodule-mapper=CMakeFiles\\HiArduino.dir\\src\\sleep.cpp.obj.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles\\HiArduino.dir\\src\\sleep.cpp.obj -c F:\\source\\cppblog\\docs\\arduino\\example\\src\\sleep.cpp",
+    "file": "F:/source/cppblog/docs/arduino/example/src/sleep.cpp",
+    "output": "F:/source/cppblog/docs/arduino/example/out/build/avr-gcc-release/CMakeFiles/HiArduino.dir/src/sleep.cpp.obj"
+  },
+  {
+    "directory": "F:/source/cppblog/docs/arduino/example/out/build/avr-gcc-release",
+    "command": "C:\\SDK\\AVRGCC\\avr8-gnu-toolchain-win32_x86_64\\bin\\avr-g++.exe -DF_CPU=16000000L -DSERIAL_BAUD=9600 -O3 -DNDEBUG -std=gnu++23 -mmcu=atmega328p -Oz -flto -fno-exceptions -fno-rtti -fno-threadsafe-statics -ffunction-sections -fdata-sections -fmodule-mapper=CMakeFiles\\HiArduino.dir\\src\\hw.ixx.obj.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles\\HiArduino.dir\\src\\hw.ixx.obj -c F:\\source\\cppblog\\docs\\arduino\\example\\src\\hw.ixx",
+    "file": "F:/source/cppblog/docs/arduino/example/src/hw.ixx",
+    "output": "F:/source/cppblog/docs/arduino/example/out/build/avr-gcc-release/CMakeFiles/HiArduino.dir/src/hw.ixx.obj"
+  },
+  {
+    "directory": "F:/source/cppblog/docs/arduino/example/out/build/avr-gcc-release",
+    "command": "C:\\SDK\\AVRGCC\\avr8-gnu-toolchain-win32_x86_64\\bin\\avr-g++.exe -DF_CPU=16000000L -DSERIAL_BAUD=9600 -O3 -DNDEBUG -std=gnu++23 -mmcu=atmega328p -Oz -flto -fno-exceptions -fno-rtti -fno-threadsafe-statics -ffunction-sections -fdata-sections -fmodule-mapper=CMakeFiles\\HiArduino.dir\\src\\sleep.ixx.obj.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles\\HiArduino.dir\\src\\sleep.ixx.obj -c F:\\source\\cppblog\\docs\\arduino\\example\\src\\sleep.ixx",
+    "file": "F:/source/cppblog/docs/arduino/example/src/sleep.ixx",
+    "output": "F:/source/cppblog/docs/arduino/example/out/build/avr-gcc-release/CMakeFiles/HiArduino.dir/src/sleep.ixx.obj"
+  }
+]
