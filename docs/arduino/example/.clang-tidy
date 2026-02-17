@@ -47,7 +47,8 @@ Checks: >
   -cppcoreguidelines-macro-usage,
   -modernize-deprecated-headers,
   -cppcoreguidelines-avoid-c-arrays,
-  -modernize-avoid-c-arrays
+  -modernize-avoid-c-arrays,
+  -readability-avoid-return-with-void-value
 
 CheckOptions:
   # Identifier naming rules

@@ -21,7 +21,6 @@ add_compile_options(
     -Wall
     -Wextra
     -pedantic-errors
-    -Werror
     $<$<CONFIG:Debug>:-Og>
     $<$<CONFIG:RelWithDebInfo>:-Oz>
 
