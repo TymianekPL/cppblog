@@ -18,6 +18,10 @@ add_compile_options("-mmcu=${AVR_MCU}")
 add_link_options("-mmcu=${AVR_MCU}")
 
 add_compile_options(
+    -Wall
+    -Wextra
+    -pedantic-errors
+    -Werror
     $<$<CONFIG:Debug>:-Og>
     $<$<CONFIG:RelWithDebInfo>:-Oz>
 
@@ -34,8 +38,9 @@ add_link_options(
     $<$<CONFIG:Release>:-flto>
 )
 
-add_executable(${PROJECT_NAME} src/main.cpp src/sleep.cpp)
-target_sources(${PROJECT_NAME} PRIVATE FILE_SET CXX_MODULES FILES src/hw.ixx src/sleep.ixx)
+add_executable(${PROJECT_NAME} src/main.cpp)
+# add_executable(${PROJECT_NAME} src/main.cpp src/sleep.cpp)
+# target_sources(${PROJECT_NAME} PRIVATE FILE_SET CXX_MODULES FILES src/hw.ixx src/sleep.ixx)
 
 target_compile_definitions(${PROJECT_NAME} PRIVATE F_CPU=${AVR_F_CPU}
                            SERIAL_BAUD=${AVR_SERIAL_BAUD})
